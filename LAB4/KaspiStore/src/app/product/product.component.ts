@@ -18,7 +18,7 @@ export class ProductComponent {
     var text = "";
     for (let i = 0; i < num; i++) {
       if(check){
-        text += '★';
+        text += '⭐';
       } else {
         text += '☆'
       }
