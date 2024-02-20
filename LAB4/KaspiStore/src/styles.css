@@ -15,7 +15,7 @@ body {
   flex-direction: row;
 }
 
-router-outlet + *  {
+router-outlet {
   padding: 0 16px;
 }
 
@@ -34,12 +34,8 @@ h2 {
   font-style: revert;
 }
 
-h1, h2 {
-  font-weight: lighter;
-}
-
 p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 a {
@@ -50,14 +46,6 @@ a {
 
 a:hover {
   opacity: 0.8;
-}
-
-input {
-  font-size: 14px;
-  border-radius: 2px;
-  padding: 8px;
-  margin-bottom: 16px;
-  border: 1px solid #BDBDBD;
 }
 
 label {
@@ -83,11 +71,6 @@ label {
 .button:hover, button:hover {
   opacity: 0.8;
   font-weight: normal;
-}
-
-.button:disabled, button:disabled {
-  opacity: 0.5;
-  cursor: auto;
 }
 
 app-top {

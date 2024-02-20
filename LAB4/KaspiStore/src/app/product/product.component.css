@@ -5,7 +5,7 @@
   display: inline-table;
   /*border: 1px solid gray;*/
   /*margin-inline: 10px;*/
-  /*border-radius: 10px;*/
+  /*border-radius: 0;*/
 }
 .main:last-child
 {
