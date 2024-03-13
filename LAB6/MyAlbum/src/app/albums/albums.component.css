@@ -1,68 +1,68 @@
 .box {
     padding: 30px 0 30px 30px;
 }
-.add {
+.add_album {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
-.add span {
-    font-size: 15px;
-    font-weight: bold;
+.add_album span {
+    font-size: 17px;
+    font-weight: 500;
     display: block;
     margin-right: 30px;
 }
-.add input {
+.add_album input {
     width: 200px;
     height: 45px;
-    border-radius: 10px;
-    background: #e2c3ff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    border: 1px solid #bc72f3;
+    border-radius: 6px;
+    background: #f5f5f5;
+    border: 1px solid #c461c4;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: 400;
     margin-right: 10px;
     padding: 0 20px;
 }
-.add button {
+.add_album .input_title {
+    width: 900px;
+}
+.add_album button {
     cursor: pointer;
-    border: #b955ff;
+    border: none;
     width: 120px;
     height: 45px;
-    background: #bc72f3;
-    border-radius: 10px;
+    background: rgb(196, 97, 196);
+    border-radius: 6px;
     font-family: sans-serif;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
     color: #fff;
-    transition: .5s;
+    transition: .3s;
 }
-.add button:hover {
-    background: rgb(196, 97, 196);
-}
-.list_of_albums {
-    font-size: 30px;
-    font-weight: 400;
+.title {
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 30px;
 }
-.albums {
+.albums_box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.item {
+.album_item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 290px;
     margin-bottom: 30px;
     padding: 20px;
-    background: #e2c3ff;
-    border-radius: 30px;
+    background: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
     color: #000;
     transition: .3s;
 }
-.top {
+.album_top {
     font-size: 19px;
     font-weight: 600;
     display: flex;
@@ -71,8 +71,7 @@
     margin-bottom: 17px;
     position: relative;
 }
-.top::after {
-
+.album_top::after {
     content: "";
     display: block;
     width: 100%;
@@ -82,28 +81,26 @@
     bottom: 0;
     margin-bottom: -10px;
 }
-.top i {
+.album_top span {
     cursor: pointer;
-    font-style: normal;
-    transition: .2s;
+    transition: .3s;
 }
-.details {
+.album_details {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
-.open {
+.album_details span {
+    margin-top: 5px;
+}
+.album_open {
     width: 100%;
     text-align: center;
-    background: #bc72f3;
-    border-radius: 10px;
+    background: rgb(196, 97, 196);
+    border-radius: 6px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
     padding: 13px 0;
     transition: .3s;
-}
-.open:hover {
-    background: rgb(196, 97, 196);
 }

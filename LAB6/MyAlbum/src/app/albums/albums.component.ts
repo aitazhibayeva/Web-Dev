@@ -10,7 +10,6 @@ import { AlbumsService } from '../albums.service';
 export class AlbumsComponent implements OnInit {
   albums: Album[];
   newAlbum: Album;
-
   constructor(private albumsService: AlbumsService) {
     this.albums = [];
     this.newAlbum = {} as Album;

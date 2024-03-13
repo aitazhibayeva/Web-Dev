@@ -15,7 +15,6 @@ export const routes: Routes = [
     { path: 'albums-component/:id/photos', component: AlbumsPhotosComponent },
     { path: '', redirectTo: 'home-component', pathMatch: 'full' }
 ];
-
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
