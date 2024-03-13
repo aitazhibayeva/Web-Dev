@@ -1,0 +1,21 @@
+<div class="box">
+    <div class="add">
+        <span>New album</span>
+        <input type="text" [(ngModel)]="newAlbum.userId" placeholder="Enter userID">
+        <input type="text" [(ngModel)]="newAlbum.title" placeholder="Enter title name" class="input_title">
+        <button (click)="createAlbum()">Create</button>
+    </div>
+    <div class="list_of_albums">My Albums</div>
+    <div class="albums">
+        <div *ngFor="let album of albums" class="item">
+            <div class="top">{{album.id}}
+                <i (click)="removeAlbum(album.id)">✖</i>
+            </div>
+            <div class="details">
+                <span>User ID: {{album.userId}}</span>
+                <span>Title: {{album.title}}</span>
+            </div>
+            <a [routerLink]="['/albums-component/{{album.id}}']" class="open">Open</a>
+        </div>
+    </div>
+</div>

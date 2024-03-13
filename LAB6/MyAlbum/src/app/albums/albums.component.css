@@ -1,0 +1,109 @@
+.box {
+    padding: 30px 0 30px 30px;
+}
+.add {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.add span {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-right: 30px;
+}
+.add input {
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    background: #e2c3ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: 1px solid #bc72f3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 10px;
+    padding: 0 20px;
+}
+.add button {
+    cursor: pointer;
+    border: #b955ff;
+    width: 120px;
+    height: 45px;
+    background: #bc72f3;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    transition: .5s;
+}
+.add button:hover {
+    background: rgb(196, 97, 196);
+}
+.list_of_albums {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.albums {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 290px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #e2c3ff;
+    border-radius: 30px;
+    color: #000;
+    transition: .3s;
+}
+.top {
+    font-size: 19px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+    position: relative;
+}
+.top::after {
+
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -10px;
+}
+.top i {
+    cursor: pointer;
+    font-style: normal;
+    transition: .2s;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.open {
+    width: 100%;
+    text-align: center;
+    background: #bc72f3;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 13px 0;
+    transition: .3s;
+}
+.open:hover {
+    background: rgb(196, 97, 196);
+}
